@@ -1,0 +1,496 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;/*يعني بقولو خلي الكلام يبقي جمب بعضو في كل الي كتبته*/
+}
+
+
+p{ /* يعني كل البراجرافات هيحصل فيه التغيرات الاتيه*/
+    color: green;
+}
+
+.red{ /*طالما قبليه نقطه يبقي كلاس و كل الكلاسات الي بنفس الاسم هيحصل عليهم التغيرات الاتيه*/
+    color: red;
+}
+
+div{
+    background-color: red;/*color name*/
+    background-color: rgb(200, 0, 0);/*red green blue alpha channel*/
+    background-color: #FF0000;/*color hex code*/
+    background-image: url("S:/PIC Code/Screenshot_20220913-135537_YouTube.jpg");
+    background-repeat: repeat;/*يعني لما مساحه الصوره تخلص تتكرر*/
+    background-repeat: no-repeat;/*يعني لما مساحه الصوره تخلص متتكررش*/
+    background-repeat: repeat;/*يعني لما مساحه الصوره تخلص تتكرر*/
+    background-repeat: repeat-x;/*يعني لما مساحه الصوره تخلص تتكرر افقي*/
+    background-repeat: repeat-y;/*يعني لما مساحه الصوره تخلص تتكرر راسي*/
+    background-attachment: fixed;/*يعني لما تنزل بالصفحه تحت الصوره بتفضل موجوده في مكانها*/
+    background-attachment: scroll;/*يعني لما تنزل بالصفحه تحت الصوره مبتفضلش موجوده في مكانها*/
+background-position: left center;/*يعني الصوره هتبقي شمال في النص*/
+background-position: right center;/*يعني الصوره هتبقي يمين في النص*/
+background-position: 50% 50%; /*يعني الصوره هتحرك بنسبه 50 راسي و نسبه 50 افقي*/
+background-position: 100px 100px;/*يعين الصوره هتتحرك بنسبه 100 بكسل افقي و 00 بكسل راسي*/
+    background-size: cover;/*يعني الصوره بتبقي بكامل الشاشه و لو كبرت نافذه هتقطع حته من الشاشه و هتبقي مكانها*/
+    background-size: contain;/*يعني الصوره بتبقي بكامل الشاشه و لو كبرت نافذه مش هتقطع حته من الشاشه و هتصغر الصوره وتبقي جمبها*/
+padding: 10px;/*يعني هيحرك الكلمه بمسافه 10 من كل الجهات*/
+padding: 10px 5px;/*يعني هيحرك الكلمه بمسافه 10 من جهه الاعلي و تاسفل و 5 من يمين و شمال*/
+padding: 10px 6px 8px 9px;/*top right buttom left*//*مبيقبلش سالب*/
+margin: 10px ;/*زيها زي الي فوقيها*//*بيقبل سالب*/
+width: 30%;/*وسع الكلام*/
+min-width: 30px;/* اقل وسع*/
+max-width: 30px;/*اقصي وسع*/
+max-height: 30px;/*اقصي طول*/
+min-height: 30px;/* اقل طول  لخلفيه اللون*/
+width: fit-content;/*مساحه لون الخلفيه مناسب للكلام*/
+border-width: 10px; /*حواف للكلام */
+border-color: red;/*حواف للكلام ملونه*/
+border-style: solid;/*حواف للكلام عريضه*/
+border-color: red green blue;/*تغيير علي كل حافه*/
+outline: 10px solid red;/*الالخط الخارجي للاطار و البوردر احسن منه */
+display: inline-block;/*بخليه يكتب في عمودين جمب بعض*/
+display: inline;/*بخليه يكتب جمب بعضو مش تحت بعض*/
+overflow: auto;/*يعني لو الكلام الي انت حطو جوي مكان محدد كتر عمه هتسكرل لو ا مش هتلاقي سكرول*/
+overflow: scroll;/*هتحط اسكرول*/
+overflow: hidden;/*يعني الزيادات عن المساحه تتمسح*/
+overflow-y: hidden;/*يعني الزيادات عن المساحه الراسيه تتمسح*/
+overflow-x: hidden;/*يعني الزيادات عن المساحه الافقيه تتمسح*/
+text-shadow: rgb(5, rgb(92, 143, 92), blue);/*للتظليل*/
+text-align: center;/*الكتابه تبداء من النصف*/
+text-align: right;/*الكتابه تبداء من النصف*/
+direction: ltr;/*الكتابه من الشمال الي اليمين*/
+direction: ltr;
+vertical-align: bottom;/*الكتابه في  الاسفل*/
+vertical-align: top;
+text-decoration: overline;/*خط فوق الكلمه*/
+text-transform: uppercase;/*تحويل الي كابيتل*/
+transition-duration: 2s;/*بخليه يحركه لمده ثانيتين لما اقف عليه*/
+transition-delay: 2s;/*بخليه يتحرك بعد ثانيتين من وقوفي عليه*/
+transition-property: all;/*هيتحرك في اتجاهات مختلفه*/
+transition-timing-function:ease ;/*بيبداء ببطء ويسرع بعدين يبطء*/
+transition-timing-function:linear ;/*بيتحرك في خط مستقيم*/
+transition-timing-function: width 3s, height 4s;/*يعني الويع بيزيد في خلال 3 ثواني و يرجع مكانه تاني و الطول بيزيد في خلال 4 ثواني و يرجع مكانه تاني*/
+flex-direction: row;/*بينظمهم علي هيءه صف*/
+flex-direction: row-reverse;/*بينظمهم علي هيءه عصف بس معكوس*/
+flex-direction: column;
+flex-direction: column-reverse;
+flex-wrap: wrap;/*يعني لو العناصر زادت عن العرض المسموح كمل في السطر الي تحتيه*/
+flex-wrap: wrap-reverse;/*يعني لو العناصر زادت عن العرض المسموح كمل في السطر الي فوقيه*/
+flex-flow: row wrap;/*فيه الخاصيتين للرو و الراب*/
+align-items: stretch;/*بخلي الكلام متزن مع لون الخلفيه*/
+align-content: flex-start;/*بياخد المجموعه و يحطها في الاول*/
+align-content: flex-end;
+align-content: space-between;
+flex-grow: 1;/*لو في مكان زياد هفي الوسع هيوسع عن الباقي*/
+flex-shrink: 3;/*لو مفيش مكان ده الي هيصغر عن الباقي*/
+order: 4;/*هنحطه في المكان الرابع بس لازم نقول الاعنصر الرابع هنحطه فين*/
+
+background-image: linear-gradient(to right, red 20%, green);/*بيعمل خط ملون 20 في المايه احمر و الباقي اخضر*/
+grid-template-columns: 12px 33px 45px;/*بيحطهم في ثلالث عواميد*/
+grid-template-columns: repeat(5, auto);/*بيقسمهم عل يخمس عواميد متساويين في الطول*/
+grid-template-columns: 12px 33px 1fr;/*بيحطهم في ثلالث عواميد والعامود الثالث بياخد بقيه الصفخه في المساحه*/
+row-gap: 10px;/*مسافه بين الصفوف*/
+column-gap: 10px;
+justify-content: flex-start;/*بيوزعهم بطريقه متساويه في الاخر*/
+justify-content: space-between;
+grid-column: span 4;/*المربع ده هياخد عرض مكان اربع مربعات*/
+grid-column: 2;/*يعني هيبداء من مكان العمود الثاني*/
+grid-row-start: 2;/*هيبداء من الصف الثاني*/
+grid-column-start: 2;/*هيبداء من العمود* الثاني*/
+grid-area: 2 / 2 / 5 / 6;/*هيبداء من الصف الثاني و العمود الثاني و هياخد مكان خمس  صفوف و 6 عواميد*/
+grid-column: span 4;/*المربع ده هياخد عرض مكان اربع مربعات*/
+
+grid-area: head;/*يعني هياخد مكان الهيد*/
+grid-area: "nav nav";
+grid-area: nav;/*هياخد مكان عمودين زي الي محددهم في الي فوفيه*/
+
+grid-template-columns: repeat(7, 200px);/*سبع عواميد بالعرض ده*/
+grid-template-columns: repeat(auto-fill, 200px);/*هيعمل مستطيل بالعرض الي مكتوب لغايه عرض الصفحه ما يخلص*/
+
+
+transform: scale(2);
+transform: scaleX(2);/*بيزود العرض للضعف*/
+transform: scaleY();
+transform: scale(-1, -1)/*بيشقلب الصوره من فوق لتحت ومن الشمال لليمين*/;
+transform: rotate(45deg);/*بيلف 45 درجه */
+transform: rotate(1term);/*بيلف لفه واحده*/
+transform: translate(20px, 76px);/*بيحركه الي الشرق الشمالي*/
+transform: translate(-20pax, -76px);/*الغرب الجنوبي*/
+transform: skew(34deg);/*انحراف*/
+transform: matrix(20px, 54px, 54px, 5px, 65px, 54px);/*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translatey())*/
+transform-origin: right bottom;/*يعني المركز بتاعه هيبقي يمين تحت*/
+transform: rotateZ();
+transform: rotateY('angle');
+transform: rotateX();
+transform-style: preserve-3d;/*يعني بيتحفظ في مكانه مبيتغيرش*/
+ border-left-color: transparent;/*يعني الركن الشمال هيختفي*/
+
+
+
+grid-template-areas: "logo logo nav nav cont cont foot foot";/*بقسمهم لعمودين و صفيين ومسودتين و فوتر*/
+
+}
+
+foot {/*بقولو الفوت هيبقي عامل ازاي في الي فوقيه*/
+    color: #FF0000;
+}
+
+
+span{
+    display: block;/*بخليه يكتب الكلام تحت بعضو زي الديف*/
+}
+
+
+.first{
+
+    display: none;/*بيتمسح و مكانه بيتملي بحاجه تانيه*/
+    visibility: hidden;/*بيتمسح و مكانه بيبقي فاضي مفيش حاجه بتبقي مكانه*/
+}
+
+
+.one,/*كذا كلاس متشابهين في نفس الخصاءص*/
+.two,
+.three{
+    color: aqua;
+}
+
+
+div p{/*البراجراف الي جوي الديف هيتعلم اما البراجراف الي بره مش هيتلون */
+    color: blueviolet;
+    letter-spacing: 2px;/*مسافه بين الحروف*/
+text-indent: 20px;/*مسافه فاضيه قبل الكلمه*/
+line-height: 1.6;/*المسافه بين الاسطر*/
+word-spacing: 2px;/*مسافات بين الكلمات*/
+width: 300px;/*العرض الي بيتكتب فيه و الباقي بينزل السطر الي تحته*/
+
+white-space: nowrap;/*يعني متنزلش سطر لتحت كمل لاخر الصفحه*/
+word-break: break-word;/*لو طلعنا بره العرض المسموح ينزل للسطر الي تحته*/
+text-overflow: ellipsis;/*لو الكلام تخطي العرض المسموح يكتب 3 نقط علشان يقولو في تكماه ويمسح الباقي*/
+
+animation-name: change-color;/*بيستدعي الانيميشن بالاسم */
+animation-duration: 6s;/*وقت حدوث الانيميشن*/
+animation-name: spin;
+animation-duration: 2s;
+animation-iteration-count: infinite;/*الي ما لا نهايه*/
+animation-timing-function: linear;/*بيتحرك بسرعه ثابته في حركه مستقيمه*/
+animation-timing-function: ease;/*بيتحرك بسرعه غير ثابته*/
+animation-direction: alternate;/*بيروح في نص الاتجاه و يرجع تاني*/
+animation-fill-mode: forwards;/*  مش هيرج زي اول شكل هيثبت بشكل اخر تغيير*/
+ animation-play-state: paused;/*التغيير هيقف*/
+ animation-play-state: running;/*التغيير هيشتغل*/
+
+
+}
+
+@keyframes up-and-down {/*هيقل و ضوحه و يرجع يظهر تاني*/
+    to {
+        opacity: 0.2;
+        
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes change-color {/*animation لتغيير اللون من الاحمر الي الازرق*/
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes change-color {/*animation  لتغيير اللون من الاحمر الي الازرق الي لاحمر */
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+
+}
+
+div {
+    color: #FF0000 !important;/*بخلي الامر ده ليه الاولويه عن الي مكتوب في صفحه الاتش تي ام ال*/
+}
+
+div p {
+    border-color: inherit;/*يعني هنلون البوردر بتاع البراجراف بنفس اللون الي في الديف*/
+    font-family: 'Roboto', sans-serif;/*لتغيير شكل الخط*/
+    font-size: 20px;/**/
+    font-variant: small-caps;/*بيصغر الخط*/
+font-weight: 200px;/*سمك الخط*/
+cursor: pointer;/*يعني بقولو ان الكلمه دي ممكن تدوس عليها*/
+cursor: move;/*يعني بقول انك ممكن تحرها */
+cursor: grab;/*يعني ممكن تحركها*/
+clear: left;
+clear: right;
+clear: both;/*بيشيل الزيادات*/
+width: calc(88% / 5);
+opacity: 0.6;/*درجه وضوح الكلام*/
+position: static;/*يعني ثابت مبيتحركش*/
+position: relative;
+top: 30px;
+bottom: 40px;
+right: 40px;
+position: fixed;/*يعني لما بننزل لتت او نطلع الكلمه بتفضل مكانها*/
+position: sticky;/*زي الي فوقيها*/
+top: 0px;
+z-index: 3;/*بديلو رقم اكبر من الباق علشان اديلو الاولويه اني يظهر و الباقي تحتي*/
+border-radius: 6px;/*بيخلي الحواف تبقي نصف داءره*/
+border-bottom-left-radius: 5px;/*بيخلي الحواف تبقي نصف داءره*/
+box-shadow: 10px red, 4px black 7px honeydew, 8px cadetblue, 7px snow;/*للتظليل*/
+box-sizing: border-box;/*يعني هنخليه الحاجات نبقي جمب بعضها*/
+box-sizing: content-box;/*يعني هنخليه الحاجات نبقي تحت بعضها*/
+
+
+
+
+}
+    
+
+table {
+    width: 100%;
+    border: 1px solid rebeccapurple;
+}
+
+table td {
+    padding: 5px;
+    background-color: #FF0000;
+
+}
+
+table thead{
+    font-weight:  bold;
+    color: aqua;
+}
+
+table thead td {
+    color: blueviolet;
+    text-align: center;
+}
+
+a {
+    color: green;
+}
+
+
+a:hover{
+    color: red;/*يعني لما يقف عليها لونها يتغير للاحمر*/
+}
+
+
+.ch + label{
+    color: #FF0000;/*يعني لما ندوس عليها الكلام الي في الليبل يتلون احمر*/
+}
+
+.ch:checked{
+    display: none;/**/
+}
+
+a:visited {
+    color: blue;/*يعني لما ندوس علي الرابط يتحول ازرق*/
+}
+
+.in:focus {
+    border-color: #FF0000;/*يعني لما نبداء نكتب نغير اللون للاحمر*/
+    outline: none;/*لما نبدا ءنكتب نشيل البوردر*/
+}
+
+.one::first-letter {/*بنعمل تغيرات علي اول حرف*/
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.one::first-line {/*بنعمل تغيير علي اول سطر*/
+    font-weight: 200px;
+    color: #FF0000;
+}
+
+.one::selection {/*بنعمل تغيير لما نحددها*/
+    background-color: black;
+    color: yellow;
+}
+
+
+.one {
+    position: relative;
+}
+
+
+.one .pipeline{/*يعني بعمل عمود بعد الكلام*/
+position: absolute;
+width: 6px;
+height: 6px;
+right: 55px;
+background-color: #FF0000;
+
+}
+
+
+.one::after {/*يعني بعمل عمود بعد الكلام*/
+    position: absolute;
+    width: 4px;
+    right: 4px;
+}
+
+
+.one::before {/*يعني بعمل عمود قبل الكلام*/
+    position: absolute;
+    left: 5px;
+
+}
+
+
+
+.par {
+    counter-increment: members-counter;/*يعني هيعد الحاجات الي جوه*/
+}
+
+
+.one {
+    content: counter(members-counter);/*حاجه من الي جوه الي هتتعد*/
+}
+
+
+:root {/*ده بيبقي مخزن لحجات معينه عايزها تبقي في حاجه تانيه*/
+    --mainColor: blue;
+}
+
+div {
+
+    color: var(--mainColor, black);/* فار ده يعني بستدعي الحاجات الجاهزه في الرووت واللون الاسود احتياطي لو الفار ماشتغلش*/
+}
+
+
+img {
+    filter: grayscale();/*بغير لون الصوره لابيض و اسود*/
+    filter: invert(4px);/*بيعكس الوان الصوره*/
+}
+
+
+img:hover {
+    filter: blur(4px);/*بيخلي الصوره باهته و لو وقفت عليها بترجع سليمه تاني*/
+}
+
+
+.par .ch {
+    color: #000;
+}
+
+.par > .ch{/*يعيني علشان يتلون لازم يبقي تحتيه مباشره*/
+    color: #FF0000;
+}
+
+.par + p {/*يعني البراجراف الي بعد الديف بالظبط*/
+    color: aliceblue;
+}
+
+div ~ p{/*التغيير هيحصل علي كل البراجرافات الي جوي الديف*/
+color: #000;
+}
+
+[title] {/*كل الي ليه تايتل*/
+    color: #000;
+}
+
+[title~="dev"] {/*كل الي ليه تايتل اسمه*/
+    color: #000;
+}
+
+[title*="dev"] {/*كل الي ليه تايتل اسمه كده او جزء من اسمه كده*/
+    color: #000;
+}
+
+div[title] {/*كل الديف الي ليه تايتل*/
+    color: #000;
+}
+
+p:first-child {/*لما البراجراف يبقي اول تشايلد*/
+    color: #000;
+}
+
+p:last-child {/*لما البراجراف يبقي اخر تشايلد*/
+color: #FF0000;
+}
+p:first-of-type {/*بيدور علي اول براجراف جوي اي حاجه */
+    color: aliceblue;
+}
+
+p:last-of-type {/*بيدور علي اخر براجراف جوي اي حاجه */
+    color: azure;
+}
+
+p:only-child {/*لما يبقي التشايلد الوحيد*/
+    color: #000;
+}
+
+p:only-of-type {/* لما يبقي التشايلد الوحيد من نوعه*/
+    color: #000;
+}
+
+p:not(:first-child){/*كلو هيتعلم ما عدا اول عنصر*/
+    color: aquamarine;
+}
+
+p:nth-child(odd){/*العناصر الي ترتيبها زوجي فقط*/
+    color: brown;
+}
+
+
+p:nth-last-child(3){/*العنصر الي ترتيبه الثالث من الاخر*/
+    color: brown;
+}
+
+p:nth-of-type(3){/*العنصر الي ترتيبه الثالث من النوع ده*/
+    color: brown;
+}
+
+input[type="checkbox"]:checked +label{/*بنعمل تغيير علي اي لابل بعد التشيك*/
+    color: cornflowerblue;
+}
+
+div:empty{/*اي ديف فاضي*/
+    color: currentColor;
+}
+
+
+input:disabled{/*التغيير بيحصل علي اي ديسابل*/
+    color: darkgray;
+}
+
+input:focus{/*التغيير بيحصل علي الفوكس*/
+    color: cornsilk;
+}
+
+::placeholder{/*...التغيير بيحصل علي كل ال*/
+    color: cornsilk;
+}
+.center-pos {/*نقدر نكتب العنوان في اي كلاس علشان ياخد الخصاءص دي*/
+    position: absolute;
+    left: 60px;
+    top: 89px;
+}
+@media (min-width: 1000px) and (max-width: 1400px){/*بيحط شرط علشان الي تحت يتنفذ*/
+    .par > div {
+        background-color: coral;/*طول ما الشرط الي فوق بيتحقق يبقي اللون هيتغير*/
+    }
+}
+
+@media print {/*هيحصل تغيير لما نعمل طباعه*/
+    .par > div:first-child{
+        display: none;/*هنخفي اول عنصر*/
+    }
+}
